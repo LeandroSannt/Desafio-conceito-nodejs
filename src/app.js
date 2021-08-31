@@ -33,12 +33,12 @@ app.get("/repositories", (request, response) => {
 
 app.post("/repositories", (request, response) => {
 
-    const {title, url, techs} = request.body
+    const {title, url, techs,like} = request.body
     const repository = {
       id:uuidv4(),
-      title :'Desafio Node.js',
-      url: 'https://github.com/rocketseat-education/bootcamp-gostack-desafios/tree/master/desafio-conceitos-nodejs',
-      techs: ["Node.js", "React-Native", "ReactJs"],
+      title,
+      url,
+      techs,
       like:0
     }
 
